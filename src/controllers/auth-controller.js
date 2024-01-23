@@ -1,5 +1,7 @@
 exports.register = (req, res, next) => {
-    res.json({message: "Register"})
+    const { email, password } = req.body
+
+    res.json({ email, password })
 }
 
 exports.login = (req, res, next) => {
@@ -7,6 +9,7 @@ exports.login = (req, res, next) => {
 }
 
 exports.forgetPassword = (req, res, next) => {
+    const { email } = req.body
     res.json({message: "Forget password"})
 }
 
