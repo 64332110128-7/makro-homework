@@ -153,11 +153,11 @@ model Product {
   stock              Int                 @default(0)
   unit               Int                 @default(1)
   priceHigh          Int                 @map("price_high")
-  minpriceHigh       Int                 @map("min_price_high")
+  minPriceHigh       Int                 @map("min_price_high")
   priceMedium        Int?                @map("price_medium")
-  minpriceMedium     Int?                @map("min_price_medium")
+  minPriceMedium     Int?                @map("min_price_medium")
   priceLow           Int?                @map("price_low")
-  minpriceLow        Int?                @map("min_price_low")
+  minPriceLow        Int?                @map("min_price_low")
   detail             String
   width              Decimal
   height             Decimal
